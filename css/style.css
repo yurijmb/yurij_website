@@ -63,7 +63,7 @@ body{
 }
 header{
     background-color: #789b60;
-    min-height: 50px;
+/*    min-height: 50px;*/
     height: 8vh;
     width: 100%;
     position: absolute;
@@ -193,7 +193,7 @@ header ul li:hover:after{
 
 /* Footer */
 footer{
-    min-height: 50px;
+/*    min-height: 50px;*/
     height: 8vh;
     width: 100%;
     position: absolute;
