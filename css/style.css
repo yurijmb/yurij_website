@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'klender';
+    src: url(../font/klender.ttf);
+}
+@font-face {
+    font-family: 'noto-sans-regular';
+    src: url(../font/NotoSansJP-Regular.otf);
+}
+
+@font-face {
+    font-family: 'meshroom';
+    src: url(../font/TheMeshroom.ttf);
+}
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url(../font/ubuntu-regular.woff2) format('woff2'),
+         url(../font/ubuntu-regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ubuntuitalic';
+    src: url(../font/ubuntu-italic.woff2) format('woff2'),
+         url(../font/ubuntu-italic.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1{
+    font-family: 'meshroom';
+}
+
+h2{
+    font-family: 'meshroom';
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ubunturegular', sans-serif;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    color: #F6F6E9;
+    scroll-behavior: smooth;
+}
+
+html{
+    min-height: 100%;
+}
+
+body{
+    height: 100%;
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    background-color: #789b60;
+    min-height: 50px;
+    height: 8vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+header ul li a{
+    text-decoration: none;
+    text-transform: lowercase;
+}
+header ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #F6F6E9;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+header ul li:hover{
+    color: #ff9c89;
+}
+header ul li:hover:after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: max(8vh, 50px);
+    bottom: max(8vh, 50px);
+    overflow: auto;
+}
+
+.content_top{
+    min-height: 84vh;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_top p{
+    font-family: 'ubuntuitalic';
+    color: #F8E36A;
+}
+
+/* Me */
+.content_me{
+    min-height: 40vh;
+    overflow: hidden;
+    background-color: #AEB990;
+    padding: 20px;
+}
+
+.me-pic{
+    float: left;
+    width: 33%;
+    padding: 20px 10px;
+    text-align: center;
+}
+.me-profile{
+    float: right;
+    width: 67%;
+    padding: 20px 10px;
+}
+
+.me-profile h4{
+    font-family: 'ubuntuitalic';
+}
+
+.me-profile p{
+    font-size: 80%;
+}
+
+@media screen and (max-width: 700px) {
+    .me-pic{
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        float: none;
+        text-align: center;
+    }
+    .me-profile{
+        width: 100%;
+        padding-bottom: 10px;
+        float: none;
+    }
+    .me-profile h1{
+        text-align: center;
+    }
+    .me-profile h3{
+        text-align: center;
+    }
+    .me-profile h4{
+        text-align: center;
+    }                    
+}
+
+/* Work */
+
+.content_work{
+    min-height: 84vh;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer */
+footer{
+    min-height: 50px;
+    height: 8vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fa-brands{
+    cursor: pointer;
+    color: #F6F6E9;
+    transition: color 0.5s;
+    padding: 0 20px;
+}
+.fa-brands:hover{
+    color: #789b60;
+}
+.fa-regular{
+    cursor: pointer;
+    color: #F6F6E9;
+    transition: color 0.5s;
+    padding: 0 20px;
+}
+.fa-regular:hover{
+    color: #789b60;
+}
+
