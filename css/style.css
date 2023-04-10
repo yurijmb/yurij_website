@@ -148,6 +148,10 @@ header ul li:hover:after{
     font-family: 'ubuntuitalic';
 }
 
+.me-profile p{
+    font-size: 90%;
+}
+
 @media screen and (max-width: 700px) {
     .me-pic{
         width: 100%;
