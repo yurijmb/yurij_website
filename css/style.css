@@ -152,6 +152,10 @@ header ul li:hover:after{
     font-size: 90%;
 }
 
+.highlight {
+    color: #F8E36A;
+}
+
 @media screen and (max-width: 700px) {
     .me-pic{
         width: 100%;
